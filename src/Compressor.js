@@ -64,8 +64,8 @@ const Compressor = () => {
           }) : <div style={{ color: '#2CD3E1' }}>Choose a Text File to see the huffman code words</div>}
         </div>
 
-          <div className='display-data'>
-            Encoded String : {encodedStr.length > 0 ? encodedStr : <div style={{ color: '#2CD3E1' }}>Choose a Text File to see Encoded Binary String</div>}
+          <div className='display-data encoded-string'>
+            Encoded String : {encodedStr.length > 0 ? <div style={{wordWrap: 'break-word'}}>{encodedStr}</div> : <div style={{ color: '#2CD3E1' }}>Choose a Text File to see Encoded Binary String</div>}
           </div></>}
       </div>
       <div>

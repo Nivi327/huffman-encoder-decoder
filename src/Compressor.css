@@ -35,9 +35,6 @@
 }
 
 .encoded-string {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin: 0 auto;
-    overflow: none;
+    word-wrap: break-word;
+    width: 330px;
 }
