@@ -30,11 +30,11 @@ function ReadTextFile(props) {
   return (
     <TextFileContext.Provider value={fileContent}>
       <div className='display-data'>
-        <span><strong>STEP 1:</strong>Choosing a text file</span> <br />
+        <span><strong>STEP 1 : </strong>Choosing a text file</span> <br />
         <input type='file' className='compress-btn' onChange={onFileChange} />
         <br />
         {showContent && <div>
-        Data in the text file: 
+        Data in the text file :  
         </div>}
         <div id="file-content">
         </div>
