@@ -1,18 +1,20 @@
-import { useContext } from 'react';
 import './App.css';
 import ReadTextFile from './context/ReadTextFile';
-import TextFileContext from './context/textFileContext';
 import Compressor from './Compressor';
 import Nav from './Nav';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <>
+      <div className="App">
+        <Nav />
         <ReadTextFile>
           <Compressor />
         </ReadTextFile>
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

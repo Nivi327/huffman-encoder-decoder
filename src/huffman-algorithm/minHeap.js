@@ -32,7 +32,7 @@ class minHeap {
     }
 
     delMin() {
-        if(this.size == 0){
+        if(this.size === 0){
             return -1;
         }
         let lstEle = this.nodes[this.size-1];
@@ -60,7 +60,7 @@ class minHeap {
             smallestValIdx = rightChild;
         }
 
-        if(smallestValIdx != idx) {
+        if(smallestValIdx !== idx) {
             let temp = this.nodes[smallestValIdx];
             this.nodes[smallestValIdx] = this.nodes[idx];
             this.nodes[idx] = temp;
